@@ -47,6 +47,7 @@ function Validation(){
   }
   this.kiemTraMatKhau = function(value,idError,name){
     var regexMatKhau= /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,10}$/;
+    console.log(value);
     if(regexMatKhau.test(value)){
       document.getElementById(idError).innerHTML='';
         return true;
